@@ -1,48 +1,14 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "target": "ES5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    // 修改配置
-    "strict": true,
     "outDir": "./lib/",
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
+    "module": "commonjs",
     "declaration": true,
-    "declarationDir": "./lib",
-    "declarationMap": false,
-    "sourceMap": false,
-    "esModuleInterop": true,
-    "module": "ES6",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "noEmit": true,
+    "target": "es5",
     "jsx": "react-jsx",
-    "types": [
-      "node",
-      "jest"
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
-    // END
-  },
-  "files": [
-    "src/index.ts"
-  ],
-  // 修改配置
-  "include": [
-    "src"
-  ]
-  // END
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strict": true
+  }
 }
