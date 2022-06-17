@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.6",
   "name": "isk-antd",
   "description": "isk-antd",
   "main": "./lib/index.js",
@@ -7,7 +7,8 @@
     "lib"
   ],
   "scripts": {
-    "tsc": "tsc",
+    "tsc": "tsc && yarn copy",
+    "copy": "node copyless.js",
     "test": "jest",
     "test-c": "jest --coverage",
     "build": "webpack --mode=production --node-env=production",
