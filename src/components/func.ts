@@ -1,12 +1,7 @@
 import {message} from "antd";
+import Msg from "isk-util/lib/msg";
 
-type Msg = {
-  code?: number,
-  msg?: string,
-  isErr(): boolean,
-};
-
-export function showMsg<T extends Msg>(m: T): T {
+export function showMsg<T extends Msg<any>>(m: T): T {
   if (m.isErr()) {
     if (m.msg) {
       showError(m.msg)
