@@ -1,6 +1,6 @@
 import {Link, useLocation} from "react-router-dom";
 import {Breadcrumb as AntdBreadcrumb} from 'antd'
-import {AppRoute} from "@/route/AppRouter";
+import {AppRoute} from "../route/AppRouter";
 
 type BreadcrumbProps = {
   rootRoute: () => AppRoute | undefined

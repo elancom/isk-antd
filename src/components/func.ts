@@ -1,12 +1,12 @@
 import {message} from "antd";
 
-type Msg<T> = {
+type Msg = {
   code?: number,
   msg?: string,
   isErr(): boolean,
 };
 
-export function showMsg(m: Msg<any>): Msg<any> {
+export function showMsg<T extends Msg>(m: T): T {
   if (m.isErr()) {
     if (m.msg) {
       showError(m.msg)

@@ -1,9 +1,9 @@
 import {Button, Space} from "antd";
 import {Link, Outlet, useLocation} from "react-router-dom";
-import Fun from "@/components/Fun";
-import Body from "@/components/Body";
+import Fun from "../components/Fun";
+import Body from "../components/Body";
 import {OpButtonsToBodyCrevice} from "./crevice";
-import {AppRoute} from "@/route/AppRouter";
+import {AppRoute} from "../route/AppRouter";
 
 type BodyLayoutProps = {
   rootRoute: () => AppRoute | undefined

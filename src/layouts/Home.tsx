@@ -3,7 +3,7 @@ import {Dropdown, Menu, Space} from 'antd';
 import {Link, Outlet, useLocation, useNavigate} from 'react-router-dom';
 import {HomeOutlined, LogoutOutlined, SettingOutlined} from '@ant-design/icons';
 import css from './Home.module.less'
-import {AppRoute} from "@/route/AppRouter";
+import {AppRoute} from "../route/AppRouter";
 
 type HomeProps = {
   username: string,
