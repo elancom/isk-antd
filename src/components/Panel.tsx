@@ -58,7 +58,7 @@ export const Body = ({children}: any) => {
   return <Card bordered={false}>{children}</Card>
 }
 
-const Panel = ({children}: any) => {
+export default function Panel({children}: any) {
   return <div style={{
     backgroundColor: '#fff',
     display: 'flex',
@@ -67,5 +67,3 @@ const Panel = ({children}: any) => {
     {children}
   </div>
 }
-
-export default Panel

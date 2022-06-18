@@ -14,4 +14,4 @@ export default function SearchPanel({children}: any) {
   return <div style={{backgroundColor: '#fff', padding: 5}}>
     {children}
   </div>
-};
+}

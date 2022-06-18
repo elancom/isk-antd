@@ -1,4 +1,4 @@
-const TablePanel = ({children}: any) => {
+export default function TablePanel({children}: any) {
   return <div style={{
     backgroundColor: '#fff',
     display: 'flex',
@@ -7,5 +7,3 @@ const TablePanel = ({children}: any) => {
     {children}
   </div>
 };
-
-export default TablePanel
